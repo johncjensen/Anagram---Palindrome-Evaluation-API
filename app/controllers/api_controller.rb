@@ -13,8 +13,9 @@ class ApiController < ApplicationController
   end
 
   def palindrome
-    eval = params[:word1] == params[:word2].reverse
-    render :json => {result: eval, word1: params[:word1], word2: params[:word2]}
+    word = params[:word1]
+    eval = word == word.reverse
+    render :json => {result: eval, word: word, wordreverse: word.reverse}
   end
 
 end

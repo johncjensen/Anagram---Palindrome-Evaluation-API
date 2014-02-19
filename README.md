@@ -4,17 +4,14 @@ Simple Rails-API application that takes two (words) url parameters, calculates i
 
 ____
 
-###Usage
+
+###Anagram Usage & Example
 
 * You can only compare two words at a time
 * Connect the words with an ampersand **"&"**
 
+[http://anagramapi.herokuapp.com/anagram/elvis&lives](http://anagramapi.herokuapp.com/anagram/elvis&lives)
 
-
-###Anagram Example
-
-
-    http://anagramapi.herokuapp.com/anagram/elvis&lives
 
 ```{
 result: true,
@@ -23,15 +20,16 @@ word2: "lives"
 }```
 
 
-###Palindrome Example
+###Palindrome Usage & Example
 
+* Input one word, reverse it and compare to see if it's a palindrome
 
-    http://anagramapi.herokuapp.com/palindrome/racecar&racecar
+[http://anagramapi.herokuapp.com/palindrome/racecar](http://anagramapi.herokuapp.com/palindrome/racecar)
 
 ```{
 result: true,
-word1: "racecar",
-word2: "racecar"
+word: "racecar",
+wordreverse: "racecar"
 }```
 
 ####[MIT License](http://johnjensen.mit-license.org)
