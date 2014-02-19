@@ -34,5 +34,5 @@ word1: "racecar",
 word2: "racecar"
 }```
 
-####[MIT License](johnjensen.mit-license.org)
+####[MIT License](http://johnjensen.mit-license.org)
 
