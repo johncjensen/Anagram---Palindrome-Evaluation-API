@@ -1,28 +1,38 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#Anagram & Palindrome Evaluation API
+Simple Rails-API application that takes two (words) url parameters, calculates if they meet the criteria for the calculation and outputs JSON with the resulting boolean.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+____
+
+###Usage
+
+* You can only compare two words at a time
+* Connect the words with an ampersand **"&"**
+
+
+
+###Anagram Example
+
+
+    http://anagramapi.herokuapp.com/anagram/elvis&lives
+
+```{
+result: true,
+word1: "elvis",
+word2: "lives"
+}```
+
+
+###Palindrome Example
+
+
+    http://anagramapi.herokuapp.com/palindrome/racecar&racecar
+
+```{
+result: true,
+word1: "racecar",
+word2: "racecar"
+}```
+
+####[MIT License](johnjensen.mit-license.org)
+
